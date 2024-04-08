@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+*{background-color: black;}
+body{
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.caixa {
+    
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+  
+}
