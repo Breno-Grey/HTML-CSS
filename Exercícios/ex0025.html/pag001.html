@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+            
+
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+            
+
+        }
+
+        th{border: 1px solid black;
+            padding: 10px;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .pika{
+            background-color: grey;
+            color: white;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: grey;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas Grandes</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th >Estado</th>
+                    <th >Population</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>São Paulo</td>
+                <td >3789120</td></tr>
+
+                <tr><td>Rio de Janeiro</td>
+                <td>1755249</td></tr>
+
+                <tr><td>Goiás</td>
+                <td>41985649784653</td></tr>
+                <tr><td>São Paulo</td>
+                    <td >3789120</td></tr>
+    
+                    <tr><td>Rio de Janeiro</td>
+                    <td>1755249</td></tr>
+    
+                    <tr><td>Goiás</td>
+                    <td>41985649784653</td></tr>
+                    <tr><td>São Paulo</td>
+                        <td >3789120</td></tr>
+        
+                        <tr><td>Rio de Janeiro</td>
+                        <td>1755249</td></tr>
+        
+                        <tr><td>Goiás</td>
+                        <td>41985649784653</td></tr>
+                        <tr><td>São Paulo</td>
+                            <td >3789120</td></tr>
+            
+                            <tr><td>Rio de Janeiro</td>
+                            <td>1755249</td></tr>
+            
+                            <tr><td>Goiás</td>
+                            <td>41985649784653</td></tr>
+                            <tr><td>São Paulo</td>
+                                <td >3789120</td></tr>
+                
+                                <tr><td>Rio de Janeiro</td>
+                                <td>1755249</td></tr>
+                
+                                <tr><td>Goiás</td>
+                                <td>41985649784653</td></tr>
+            </tbody>
+            <tfoot><tr><th class="pika">Total de Habitantes</th>
+            <td>203324087</td></tr></tfoot>
+        </table>
+    
+</body>
+</html>
