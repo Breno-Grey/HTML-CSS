@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino de formulário</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main{
+            background-color: rgb(255, 255, 255);
+            margin-right: auto;
+            height: 100vh;
+            padding-bottom: 50px;
+            position: relative;
+        }
+        h1{
+            text-align: center;
+        }
+       p{
+        font-size: 1.4;
+       }
+        #cadastro{
+            position: relative;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: grey;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.733);
+            border-radius: 20px;
+            width: 350px;
+            height: 150px;
+        }
+        form{
+            text-align: left;
+            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Preencha as suas informações para prosseguir</h1>
+        <div id="cadastro">
+            <form action="cadastro.php" method="post" autocomplete="off">
+                <p>
+                    <label for="ilogin">Login:</label>
+                    <input type="text" name="login" id="ilogin" minlength="5" maxlength="15" autocomplete="name" required placeholder="Digite seu Nome">
+                </p>
+                <p>
+                    <label for="isenha">Senha:</label>
+                    <input type="password" name="senha" id="isenha" minlength="8" maxlength="15" autocomplete="new-password" required placeholder="Digite sua Senha">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Apagar">
+                </p>
+            
+            </form>
+        </div>
+    </main>
+</body>
+</html>
